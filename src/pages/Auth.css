@@ -1,0 +1,190 @@
+.auth-page {
+  min-height: 100vh;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.auth-container {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  gap: 80px;
+  align-items: center;
+}
+
+.auth-left {
+  flex: 1;
+  color: white;
+}
+
+.auth-logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.auth-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.auth-text p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 24px;
+  padding: 48px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  color: var(--color-text-main);
+}
+
+.auth-subtitle {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.auth-title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-actions.align-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+.btn-continue {
+  background: var(--color-accent);
+  color: var(--color-text-main);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 50px;
+}
+
+.btn-continue:hover {
+  background: var(--color-accent-hover);
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 32px 0;
+  color: var(--color-text-muted);
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.auth-divider span {
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.btn-social {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1877F2; /* Facebook blue default for icon */
+}
+
+.btn-social:hover {
+  background: var(--color-bg-gray);
+}
+
+.auth-footer {
+  margin-top: 32px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.auth-footer.text-center {
+  text-align: center;
+}
+
+.auth-footer a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .auth-left, .auth-right {
+    width: 100%;
+    justify-content: center;
+  }
+  .auth-card {
+    padding: 32px;
+  }
+}
