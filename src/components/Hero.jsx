@@ -48,7 +48,7 @@ const Hero = ({ onSearch }) => {
       <div className="hero-visual-container">
         {/* Green Arch Backdrop & Boy Image */}
         <div className="arch-wrapper">
-          <img src="/assets/media__1790669330381.png" alt="Mask Group" className="arch-background-img" />
+          <div className="arch-background"></div>
           <img src="/assets/hero-student.png" alt="ByteSpace Student" className="hero-student-img" />
 
           {/* Floating UI Cards */}
