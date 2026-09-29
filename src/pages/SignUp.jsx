@@ -25,9 +25,7 @@ const SignUp = ({ onNavigate }) => {
         {/* Left Side Content */}
         <div className="auth-left">
           <div className="auth-brand" onClick={() => onNavigate('home')}>
-            <div className="logo-badge">
-              <span>b</span>
-            </div>
+            <img src="/assets/logo-b.png" alt="ByteSpace Logo" className="logo-b-img" />
           </div>
 
           <h1 className="auth-left-title">Sign up and come in</h1>

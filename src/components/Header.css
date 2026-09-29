@@ -18,6 +18,13 @@
   user-select: none;
 }
 
+.logo-b-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .logo-badge {
   background-color: var(--primary-color);
   color: #000000;

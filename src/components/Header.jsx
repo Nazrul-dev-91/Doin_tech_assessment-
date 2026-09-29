@@ -6,9 +6,7 @@ const Header = ({ currentPage, onNavigate }) => {
   return (
     <header className="header container">
       <div className="logo" onClick={() => onNavigate && onNavigate('home')} style={{ cursor: 'pointer' }}>
-        <div className="logo-badge">
-          <span>b</span>
-        </div>
+        <img src="/assets/logo-b.png" alt="ByteSpace" className="logo-b-img" />
         <span className="logo-text">ByteSpace</span>
       </div>
       

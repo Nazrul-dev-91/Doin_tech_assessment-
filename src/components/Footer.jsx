@@ -18,9 +18,7 @@ const Footer = ({ onNavigate }) => {
       <div className="footer-top">
         <div className="footer-brand">
           <div className="logo logo-dark" onClick={() => onNavigate && onNavigate('home')} style={{ cursor: 'pointer' }}>
-            <div className="logo-badge">
-              <span>b</span>
-            </div>
+            <img src="/assets/logo-b.png" alt="ByteSpace Logo" className="logo-b-img" />
             <span className="logo-text-dark">ByteSpace</span>
           </div>
           <p className="newsletter-desc">
