@@ -79,32 +79,40 @@ const Home = () => {
       <section className="courses-section container">
         <div className="section-header text-center">
           <h2>Discover Your Passion,<br/>Build Your Skills</h2>
-          <p>Explore thousands of courses on highly demanding topics. Learn from industry experts and take your career to the next level.</p>
+          <p>At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.</p>
         </div>
         
         <div className="category-tabs">
-          <button className="tab active">See all</button>
-          <button className="tab">Design</button>
-          <button className="tab">Development</button>
+          <button className="tab active">Featured</button>
+          <button className="tab">Music</button>
+          <button className="tab">Drawing & Painting</button>
           <button className="tab">Marketing</button>
-          <button className="tab">Data Science</button>
-          <button className="tab">Photography</button>
-          <button className="tab">Business</button>
+          <button className="tab">Animation</button>
+          <button className="tab">Social Media</button>
+          <button className="tab">UI/UX Design</button>
         </div>
         
         <div className="courses-grid">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div className="course-card" key={i}>
+          {[
+            { id: 1, title: 'Learn Figma from Basic', img: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80' },
+            { id: 2, title: 'Build Digital Asset', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80' },
+            { id: 3, title: 'the Power of Big Data', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80' },
+            { id: 4, title: 'Balancing Productivity an...', img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80' },
+            { id: 5, title: 'Mastering Money Manage...', img: 'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80' },
+            { id: 6, title: 'From Idea to Startup Succ...', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80' }
+          ].map((course) => (
+            <div className="course-card" key={course.id}>
               <div className="course-img-wrapper">
-                <img src={`https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80`} alt="Course" />
+                <img src={course.img} alt={course.title} />
                 <div className="course-badges">
                   <span className="badge-lessons">17 Lessons</span>
                   <span className="badge-time">2 hours 16 mins</span>
+                  <span className="badge-time">59 Comments</span>
                 </div>
               </div>
               <div className="course-content">
                 <div className="course-title-row">
-                  <h3>Learn Figma UI/UX Design</h3>
+                  <h3>{course.title}</h3>
                   <div className="rating">4.5 <Star size={14} fill="#facc15" stroke="none"/></div>
                 </div>
                 <p className="author">by purepearl studio</p>
@@ -117,7 +125,7 @@ const Home = () => {
                     <div className="avatar"></div>
                     <div className="avatar"></div>
                     <div className="avatar"></div>
-                    <div className="avatar more">2K+</div>
+                    <div className="avatar more">26+</div>
                   </div>
                 </div>
               </div>
@@ -128,8 +136,8 @@ const Home = () => {
 
       {/* Categories Section */}
       <section className="categories-section container text-center">
-        <h2>Explore Diverse Learning Paths at ByteSpace</h2>
-        <p className="subtitle">Discover a world of knowledge and skill enhancement across multiple domains. Explore these categories to find exactly what you're looking for.</p>
+        <h2>Explore Diverse Learning Paths at Bytespace</h2>
+        <p className="subtitle">At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.</p>
         
         <div className="categories-grid">
           <div className="category-box">
@@ -142,19 +150,19 @@ const Home = () => {
           </div>
           <div className="category-box">
             <div className="icon-box"><Briefcase /></div>
+            <h4>IT & Software</h4>
+          </div>
+          <div className="category-box">
+            <div className="icon-box"><BarChart /></div>
             <h4>Business</h4>
+          </div>
+          <div className="category-box">
+            <div className="icon-box"><PlayCircle /></div>
+            <h4>Marketing</h4>
           </div>
           <div className="category-box">
             <div className="icon-box"><Camera /></div>
             <h4>Photography</h4>
-          </div>
-          <div className="category-box">
-            <div className="icon-box"><BarChart /></div>
-            <h4>Marketing</h4>
-          </div>
-          <div className="category-box">
-            <div className="icon-box"><PlayCircle /></div>
-            <h4>Music</h4>
           </div>
         </div>
       </section>
@@ -163,7 +171,7 @@ const Home = () => {
       <section className="split-section container">
         <div className="split-content">
           <h2>Your Path to Professional<br/>Growth Starts Here!</h2>
-          <p>Gain the knowledge and skills needed to thrive in today's competitive landscape. Take the first step towards a brighter future by enrolling in our expert-led courses.</p>
+          <p>Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey.<br/><br/>Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.</p>
           <div className="stats-row">
             <div className="stat-item">
               <h3>12K</h3>
@@ -174,8 +182,8 @@ const Home = () => {
               <p>Courses</p>
             </div>
             <div className="stat-item">
-              <h3>18</h3>
-              <p>Mentors</p>
+              <h3>16</h3>
+              <p>Creators</p>
             </div>
           </div>
         </div>
@@ -195,12 +203,12 @@ const Home = () => {
         </div>
         <div className="split-content">
           <h2>Create & Manage<br/>Courses Easily.</h2>
-          <p>ByteSpace provides a seamless and user-friendly platform for instructors to build and manage their courses.</p>
+          <p>ByteSpace supports individuals or entities in the creation, publication, and administration of educational courses.</p>
           <ul className="feature-list">
-            <li><span className="check">✓</span> Effortless Creation</li>
-            <li><span className="check">✓</span> Centralized Dashboard</li>
-            <li><span className="check">✓</span> Flexibility and Autonomy</li>
-            <li><span className="check">✓</span> Active Community</li>
+            <li><span className="check check-blue">✓</span> Share Your Expertise</li>
+            <li><span className="check check-blue">✓</span> Monetize Your Passion</li>
+            <li><span className="check check-blue">✓</span> Flexibility and Autonomy</li>
+            <li><span className="check check-blue">✓</span> Build a Community</li>
           </ul>
         </div>
       </section>
