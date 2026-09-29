@@ -31,12 +31,10 @@ const Home = () => {
           </div>
           
           <div className="hero-image-wrapper">
-            {/* The boy hero image */}
-            <div className="hero-circle"></div>
             <img src="/hero-boy.png" alt="Student" className="hero-main-img" />
             
-            {/* Floating Cards */}
-            <img src="/card-uiux.png" alt="UI/UX Design" className="floating-img card-uiux-img" />
+            {/* Floating Elements */}
+            <img src="/card-uiux.png" alt="Shape Blob" className="floating-img shape-green-blob" />
             <img src="/card-progress.png" alt="Learning Progress" className="floating-img card-progress-img" />
             <img src="/card-students.png" alt="Happy Students" className="floating-img card-students-img" />
           </div>
