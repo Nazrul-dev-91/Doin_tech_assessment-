@@ -10,22 +10,32 @@ import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import './Home.css';
 
-const Home = () => {
+const Home = ({ onNavigate }) => {
+  const handleSearch = (query) => {
+    if (query) {
+      const coursesSection = document.getElementById('courses');
+      if (coursesSection) {
+        coursesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div className="home-page">
-      <div className="hero-bg-wrapper">
-        <Header />
-        <Hero />
+      <div className="hero-bg-wrapper blue-grid-bg">
+        <Header currentPage="home" onNavigate={onNavigate} />
+        <Hero onSearch={handleSearch} />
       </div>
-      <Features />
+      <Features onSelectCategory={handleSearch} />
       <Courses />
       <LearningPaths />
       <Growth />
-      <CTA />
+      <CTA onJoinCreator={onNavigate} />
       <Testimonials />
-      <Footer />
+      <Footer onNavigate={onNavigate} />
     </div>
   );
 };
 
 export default Home;
+

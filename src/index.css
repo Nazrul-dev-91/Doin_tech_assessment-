@@ -1,14 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
-  --primary-color: #D3FF00; /* lime green */
-  --primary-dark: #b8de00;
-  --bg-color: #ffffff;
-  --text-dark: #1F2022;
-  --text-light: #707275;
-  --bg-dark: #0037FF; /* The bright blue */
-  --bg-darker: #002BCC;
+  --primary-color: #D2FF00; /* Neon Electric Lime */
+  --primary-hover: #bde600;
+  --bg-blue: #0048FE;
+  --bg-blue-dark: #0036C8;
+  --bg-blue-light: #1A5CFF;
+  --bg-light: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted: #64748B;
+  --text-light: #94A3B8;
+  --border-color: #E2E8F0;
   
-  --font-main: 'Inter', sans-serif;
-  --transition: all 0.3s ease;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-hover: 0 20px 40px -10px rgba(0, 72, 254, 0.15);
 }
 
 * {
@@ -17,12 +29,23 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: var(--font-main);
-  background-color: var(--bg-color);
+  font-family: var(--font-body);
+  background-color: #FFFFFF;
   color: var(--text-dark);
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
 }
 
 a {
@@ -32,40 +55,109 @@ a {
 
 button {
   cursor: pointer;
-  font-family: var(--font-main);
+  font-family: var(--font-heading);
   border: none;
   background: none;
+  outline: none;
+}
+
+input {
+  font-family: var(--font-body);
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Blue Grid Pattern */
+.blue-grid-bg {
+  background-color: var(--bg-blue);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 70px 70px;
+  background-position: center center;
+  position: relative;
 }
 
-.animate-on-scroll {
-  opacity: 0;
-  animation: fadeIn 0.8s ease forwards;
-}
-
-/* Base button styles */
+/* Buttons */
 .btn-primary {
   background-color: var(--primary-color);
-  color: #000;
-  padding: 12px 24px;
+  color: #000000;
+  padding: 12px 28px;
   border-radius: 50px;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 15px;
   transition: var(--transition);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(210, 255, 0, 0.4);
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(210, 255, 0, 0.5);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  transition: var(--transition);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-2px);
 }
+
+/* Floating Animation Keyframes */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(12px) rotate(-3deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.float-anim {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.float-anim-reverse {
+  animation: floatReverse 6s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
