@@ -6,7 +6,7 @@ const Courses = () => {
   const courses = [
     { 
       id: 1, 
-      title: 'Learn UI/UX Design from Basic', 
+      title: 'Learn Figma from Basic', 
       author: 'purepearl studio', 
       rating: 4.8, 
       price: 25, 
@@ -42,7 +42,7 @@ const Courses = () => {
     },
     { 
       id: 4, 
-      title: 'Balancing Productivity', 
+      title: 'Balancing Productivity and...', 
       author: 'purepearl studio', 
       rating: 4.8, 
       price: 40, 
@@ -54,7 +54,7 @@ const Courses = () => {
     },
     { 
       id: 5, 
-      title: 'Mastering Money Management', 
+      title: 'Mastering Money Manage...', 
       author: 'purepearl studio', 
       rating: 4.8, 
       price: 25, 
@@ -66,7 +66,7 @@ const Courses = () => {
     },
     { 
       id: 6, 
-      title: 'From Idea to Startup Success', 
+      title: 'From Idea to Startup Succ...', 
       author: 'purepearl studio', 
       rating: 4.8, 
       price: 25, 
@@ -77,6 +77,7 @@ const Courses = () => {
       students: '2100+ Students'
     },
   ];
+
 
   return (
     <section className="courses container" id="courses">
