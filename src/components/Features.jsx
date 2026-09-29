@@ -4,13 +4,10 @@ import './Features.css';
 const Features = ({ activeCategory, onSelectCategory }) => {
   const [selected, setSelected] = useState(activeCategory || 'Featured');
 
-  const categories = [
-    "Featured", "Music", "Drawing & Painting", "Marketing", 
-    "Animation", "Social Media", "UI/UX Design", "Creative Marketing",
-    "Digital Illustration", "Film & Video", "Crafts", 
-    "Freelance & Entrepreneurship", "Graphic Design", 
-    "Productivity", "Web Development", "Data Science", 
-    "Cooking", "+ More"
+  const categoryRows = [
+    ["Featured", "Music", "Drawing & Painting", "Marketing", "Animation", "Social Media", "UI/UX Design", "Creative Marketing"],
+    ["Digital Illustration", "Film & Video", "Crafts", "Freelance & Entrepreneurship", "Graphic Design", "Photography"],
+    ["Productivity", "Web Development", "Data Science", "Cooking", "+ More"]
   ];
 
   const handlePillClick = (cat) => {
@@ -48,15 +45,32 @@ const Features = ({ activeCategory, onSelectCategory }) => {
           At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
         </p>
 
-        <div className="categories-pills">
-          {categories.map((cat, idx) => (
-            <button
-              key={idx}
-              className={`pill ${selected === cat ? 'active' : ''}`}
-              onClick={() => handlePillClick(cat)}
-            >
-              {cat}
-            </button>
+        <div className="categories-pills-container">
+          {categoryRows.map((row, rIdx) => (
+            <div key={rIdx} className="category-row">
+              {row.map((cat, idx) => {
+                if (cat === "+ More") {
+                  return (
+                    <button
+                      key={idx}
+                      className="more-link-btn"
+                      onClick={() => handlePillClick(cat)}
+                    >
+                      + More
+                    </button>
+                  );
+                }
+                return (
+                  <button
+                    key={idx}
+                    className={`pill ${selected === cat ? 'active' : ''}`}
+                    onClick={() => handlePillClick(cat)}
+                  >
+                    {cat}
+                  </button>
+                );
+              })}
+            </div>
           ))}
         </div>
       </div>
@@ -65,4 +79,5 @@ const Features = ({ activeCategory, onSelectCategory }) => {
 };
 
 export default Features;
+
 
