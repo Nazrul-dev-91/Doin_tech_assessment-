@@ -2,51 +2,63 @@ import React from 'react';
 import './LearningPaths.css';
 
 const DesignIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 19l7-7 3 3-7 7-3-3z" />
     <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
     <path d="M2 2l7.586 7.586" />
-    <circle cx="11" cy="11" r="2" />
+    <circle cx="11" cy="11" r="1.8" fill="#0F172A" />
   </svg>
 );
 
 const DevelopmentIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="5" y="2" width="14" height="20" rx="3" />
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="5" y="2" width="14" height="20" rx="3.5" strokeWidth="2.8" />
     <path d="M9 9.5L7 12l2 2.5" />
     <path d="M15 9.5l2 2.5-2 2.5" />
   </svg>
 );
 
 const ITIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="3" y="4" width="18" height="12" rx="2" />
-    <path d="M2 20h20" />
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="4" width="18" height="12" rx="2" strokeWidth="2.6" />
+    <path d="M1 20h22" strokeWidth="3" />
   </svg>
 );
 
 const BusinessIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
     <path d="M3 21h18" />
-    <path d="M5 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14" />
+    <path d="M5 21V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v15" />
     <path d="M13 21V11a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10" />
-    <path d="M9 9h.01M9 13h.01M9 17h.01M17 13h.01M17 17h.01" />
+    <rect x="7" y="7" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="10" y="7" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="7" y="11" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="10" y="11" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="7" y="15" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="10" y="15" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="15" y="12" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="18" y="12" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="15" y="16" width="1.8" height="1.8" fill="#0F172A" />
+    <rect x="18" y="16" width="1.8" height="1.8" fill="#0F172A" />
   </svg>
 );
 
 const MarketingIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-    <circle cx="9" cy="7" r="4" />
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="5.5" cy="5.5" r="2.5" fill="#0F172A" />
+    <path d="M2.5 13c0-2.2 1.8-4 4-4s4 1.8 4 4" strokeWidth="2.6" />
+    <path d="M11 6.5a5.5 5.5 0 0 1 5.5 5.5" strokeWidth="2.8" />
+    <path d="M14 9.5a2.8 2.8 0 0 1 2.8 2.8" strokeWidth="2.8" />
+    <circle cx="18.5" cy="18.5" r="2.5" fill="#0F172A" />
+    <path d="M15.5 24c0-2.2 1.8-4 4-4s4 1.8 4 4" strokeWidth="2.6" />
   </svg>
 );
 
 const PhotographyIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-    <circle cx="12" cy="13" r="4" />
+    <circle cx="12" cy="13" r="3.5" strokeWidth="2.6" />
+    <circle cx="12" cy="13" r="1.5" fill="#0F172A" />
   </svg>
 );
 
@@ -84,6 +96,7 @@ const LearningPaths = () => {
 };
 
 export default LearningPaths;
+
 
 
 
