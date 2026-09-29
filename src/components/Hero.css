@@ -112,56 +112,57 @@
   position: absolute;
   background: #FFFFFF;
   border-radius: 20px;
-  padding: 16px 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  padding: 16px 22px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
   z-index: 10;
   text-align: left;
   color: #0F172A;
+  border: 1px solid rgba(241, 245, 249, 0.8);
 }
 
 .card-ui-ux {
-  top: 60px;
-  left: -20px;
-  min-width: 220px;
+  top: 140px;
+  left: -50px;
+  min-width: 210px;
 }
 
 .card-ui-ux h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: #0F172A;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .card-ui-ux p {
-  font-size: 12px;
+  font-size: 11px;
   color: #64748B;
   margin: 0;
 }
 
 .card-progress {
-  top: 100px;
-  right: -30px;
-  width: 220px;
+  top: 160px;
+  right: -50px;
+  width: 210px;
 }
 
 .card-label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: #64748B;
   display: block;
 }
 
 .progress-value {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 800;
   color: #0F172A;
   line-height: 1.1;
-  margin: 4px 0 10px;
+  margin: 2px 0 8px;
 }
 
 .progress-bar-track {
   width: 100%;
-  height: 8px;
+  height: 6px;
   background: #F1F5F9;
   border-radius: 10px;
   overflow: hidden;
@@ -174,8 +175,8 @@
 }
 
 .card-happy-students {
-  bottom: 40px;
-  left: -40px;
+  bottom: 50px;
+  left: -90px;
   min-width: 240px;
 }
 
@@ -187,7 +188,7 @@
 }
 
 .rating-badge {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #0F172A;
   display: flex;
@@ -211,11 +212,11 @@
 }
 
 .avatar-img {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 2px solid #FFFFFF;
-  margin-left: -10px;
+  margin-left: -8px;
   object-fit: cover;
 }
 
@@ -224,18 +225,18 @@
 }
 
 .avatar-more {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: var(--primary-color);
   color: #000000;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #FFFFFF;
-  margin-left: -10px;
+  margin-left: -8px;
 }
 
 /* Floating 3D Shapes */
@@ -246,39 +247,39 @@
 }
 
 .shape-lime-helix {
-  width: 140px;
-  top: 10px;
-  left: 0px;
+  width: 150px;
+  top: 40px;
+  left: 40px;
 }
 
 .shape-white-helix-left {
-  width: 120px;
-  top: 210px;
-  left: 50px;
+  width: 110px;
+  top: 240px;
+  left: 180px;
 }
 
 .shape-white-torus {
-  width: 160px;
-  bottom: 0px;
-  left: 20px;
+  width: 220px;
+  bottom: 40px;
+  left: 60px;
 }
 
 .shape-lime-cylinder {
-  width: 150px;
-  top: 0px;
-  right: 10px;
-}
-
-.shape-white-pyramid {
-  width: 120px;
-  top: 200px;
+  width: 170px;
+  top: 20px;
   right: 40px;
 }
 
-.shape-white-helix-right {
+.shape-white-pyramid {
   width: 130px;
-  bottom: 20px;
-  right: 30px;
+  top: 220px;
+  right: 180px;
+}
+
+.shape-white-helix-right {
+  width: 150px;
+  bottom: 30px;
+  right: 60px;
 }
 
 /* Responsive adjustments */
