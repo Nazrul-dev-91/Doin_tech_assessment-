@@ -242,3 +242,22 @@
 .students-avatars .avatar.bg-yellow { background: #eab308; }
 .students-avatars .avatar.bg-green { background: var(--color-accent); color: var(--color-text-main); }
 
+
+/* 3D Shapes */
+.hero-shape, .cta-shape { position: absolute; z-index: 2; }
+.hero-spring-top { top: -20px; left: -80px; transform: scale(0.8) rotate(-15deg); }
+.hero-spring-bottom { bottom: 100px; left: -150px; transform: scale(0.6) rotate(45deg); }
+.hero-donut { bottom: -60px; left: 0px; transform: scale(0.7) rotate(20deg); }
+.hero-cylinder { top: 0px; right: -80px; transform: scale(0.8) rotate(15deg); }
+.hero-cone { top: 150px; right: -150px; transform: scale(0.6) rotate(-25deg); }
+.hero-spring-right { bottom: 40px; right: -100px; transform: scale(0.7) rotate(15deg); }
+
+.cta-content { position: relative; overflow: hidden; }
+.cta-cone { top: 20%; left: 5%; transform: scale(0.8) rotate(30deg); }
+.cta-donut { bottom: 10%; left: 10%; transform: scale(0.9) rotate(-15deg); }
+.cta-cylinder { top: 10%; right: 5%; transform: scale(0.8) rotate(10deg); }
+.cta-spring { bottom: 5%; right: 5%; transform: scale(0.7) rotate(25deg); }
+
+@media (max-width: 900px) {
+  .hero-shape, .cta-shape { display: none; }
+}

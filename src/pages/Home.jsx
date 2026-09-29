@@ -1,5 +1,7 @@
 import React from 'react';
-import { Search, Star, BarChart, PenTool, Code, Camera, Briefcase, PlayCircle, Users } from 'lucide-react';
+import { Search, Star, BarChart, PenTool, Code, Camera, Briefcase, PlayCircle } from 'lucide-react';
+import { ShapeCone, ShapeDonut, ShapeCylinder, ShapeSpring } from '../components/FloatingShapes';
+import { BrandLogo1, BrandLogo2, BrandLogo3, BrandLogo4, BrandLogo5 } from '../components/BrandLogos';
 import './Home.css';
 
 const Home = () => {
@@ -35,6 +37,14 @@ const Home = () => {
               className="hero-main-img" 
             />
             
+            {/* 3D Shapes */}
+            <ShapeSpring className="hero-shape hero-spring-top" color="green" />
+            <ShapeSpring className="hero-shape hero-spring-bottom" color="white" />
+            <ShapeDonut className="hero-shape hero-donut" color="white" />
+            <ShapeCylinder className="hero-shape hero-cylinder" color="green" />
+            <ShapeCone className="hero-shape hero-cone" />
+            <ShapeSpring className="hero-shape hero-spring-right" color="white" />
+            
             <div className="floating-card card-uiux">
               <h4>UI/UX Design</h4>
               <p>200 Courses • 1000+ Students</p>
@@ -67,11 +77,11 @@ const Home = () => {
       {/* Brands Section */}
       <section className="brands-section">
         <div className="container brands-logos">
-          <div className="brand-logo">LogoIpsum</div>
-          <div className="brand-logo">LogoIpsum</div>
-          <div className="brand-logo">LogoIpsum</div>
-          <div className="brand-logo">LogoIpsum</div>
-          <div className="brand-logo">LogoIpsum</div>
+          <BrandLogo1 />
+          <BrandLogo2 />
+          <BrandLogo3 />
+          <BrandLogo4 />
+          <BrandLogo5 />
         </div>
       </section>
 
@@ -246,6 +256,11 @@ const Home = () => {
           <h2>Unlock Your Potential as a<br/>Creator with ByteSpace</h2>
           <p>Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.</p>
           <button className="btn-join">Join as Creator</button>
+          
+          <ShapeCone className="cta-shape cta-cone" />
+          <ShapeDonut className="cta-shape cta-donut" color="green" />
+          <ShapeCylinder className="cta-shape cta-cylinder" color="white" />
+          <ShapeSpring className="cta-shape cta-spring" color="green" />
         </div>
       </section>
 
