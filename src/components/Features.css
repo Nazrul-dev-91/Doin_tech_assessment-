@@ -43,8 +43,27 @@
 
 .discover-section {
   text-align: center;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.discover-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.discover-subtitle {
+  color: #64748B;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 44px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .categories-pills-container {
@@ -53,16 +72,17 @@
   align-items: center;
   gap: 12px;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .category-row {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .pill {
@@ -70,8 +90,8 @@
   background-color: #F3F4F6;
   border-radius: 50px;
   color: #334155;
-  font-weight: 500;
-  font-size: 13.5px;
+  font-weight: 700;
+  font-size: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
   border: 1px solid transparent;
@@ -94,8 +114,8 @@
   background: transparent;
   border: none;
   color: #0048FE;
-  font-weight: 600;
-  font-size: 13.5px;
+  font-weight: 700;
+  font-size: 12px;
   padding: 8px 12px;
   cursor: pointer;
   transition: color 0.2s ease;
@@ -106,6 +126,7 @@
   color: #0036C7;
   text-decoration: underline;
 }
+
 
 
 
