@@ -241,38 +241,44 @@
 /* Floating 3D Shapes */
 .shape {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   pointer-events: none;
 }
 
 .shape-lime-helix {
-  width: 130px;
-  top: 30px;
+  width: 140px;
+  top: 10px;
+  left: 0px;
+}
+
+.shape-white-helix-left {
+  width: 120px;
+  top: 210px;
+  left: 50px;
+}
+
+.shape-white-torus {
+  width: 160px;
+  bottom: 0px;
   left: 20px;
 }
 
 .shape-lime-cylinder {
-  width: 140px;
-  top: 10px;
-  right: 40px;
-}
-
-.shape-white-torus {
   width: 150px;
-  bottom: 20px;
-  left: 60px;
+  top: 0px;
+  right: 10px;
 }
 
 .shape-white-pyramid {
   width: 120px;
-  top: 180px;
-  right: 10px;
+  top: 200px;
+  right: 40px;
 }
 
-.shape-white-helix {
+.shape-white-helix-right {
   width: 130px;
-  bottom: 40px;
-  right: 80px;
+  bottom: 20px;
+  right: 30px;
 }
 
 /* Responsive adjustments */

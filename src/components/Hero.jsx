@@ -39,16 +39,17 @@ const Hero = ({ onSearch }) => {
       {/* Visual Centerpiece with Floating 3D Assets & Cards */}
       <div className="hero-visual-container">
         {/* Floating 3D Shapes */}
-        <img src="/assets/3d-helix-white.png" alt="3D Shape" className="shape shape-lime-helix float-anim" />
-        <img src="/assets/3d-cylinder.png" alt="3D Shape" className="shape shape-lime-cylinder float-anim-reverse" />
-        <img src="/assets/3d-torus.png" alt="3D Shape" className="shape shape-white-torus float-anim" />
-        <img src="/assets/3d-pyramid.png" alt="3D Shape" className="shape shape-white-pyramid float-anim-reverse" />
-        <img src="/assets/3d-helix-white.png" alt="3D Shape" className="shape shape-white-helix float-anim" />
+        <img src="/assets/shape-lime-helix-real.png" alt="Lime Helix" className="shape shape-lime-helix float-anim" />
+        <img src="/assets/shape-white-helix-real.png" alt="White Helix" className="shape shape-white-helix-left float-anim-reverse" />
+        <img src="/assets/shape-white-torus-real.png" alt="White Torus" className="shape shape-white-torus float-anim" />
+        <img src="/assets/shape-lime-cylinder-real.png" alt="Lime Cylinder" className="shape shape-lime-cylinder float-anim-reverse" />
+        <img src="/assets/shape-white-pyramid-real.png" alt="White Pyramid" className="shape shape-white-pyramid float-anim" />
+        <img src="/assets/shape-white-helix-real.png" alt="White Helix" className="shape shape-white-helix-right float-anim-reverse" />
 
         {/* Green Arch Backdrop & Boy Image */}
         <div className="arch-wrapper">
           <div className="arch-background"></div>
-          <img src="/assets/growth-boy.png" alt="ByteSpace Student" className="hero-student-img" />
+          <img src="/assets/hero-student.png" alt="ByteSpace Student" className="hero-student-img" />
 
           {/* Floating UI Cards */}
           <div className="hero-card card-ui-ux float-anim">
