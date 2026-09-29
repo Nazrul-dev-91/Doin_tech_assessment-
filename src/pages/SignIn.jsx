@@ -48,32 +48,7 @@ const SignIn = ({ onNavigate }) => {
               <div className="card-pill">Beginner</div>
             </div>
 
-            <div className="auth-course-card card-front">
-              <div className="card-thumb-bg bg-power-data">
-                <div className="card-top-tags">
-                  <span>17 Lessons</span>
-                  <span>2 hours 16 mins</span>
-                  <span>59 Comments</span>
-                </div>
-              </div>
-              <div className="card-front-body">
-                <div className="card-title-row">
-                  <h4>the Power of Big Data</h4>
-                  <span className="card-rating">4.5 ★</span>
-                </div>
-                <span className="card-author">by purepearl studio</span>
-                <div className="card-meta-row">
-                  <span className="card-pill">Beginner</span>
-                  <div className="card-avatars">
-                    <img src="/assets/testimonial-1.png" alt="User" />
-                    <img src="/assets/testimonial-2.png" alt="User" />
-                    <img src="/assets/testimonial-3.png" alt="User" />
-                    <span className="more-count">26+</span>
-                  </div>
-                </div>
-                <div className="card-price">$25<span>/lifetime</span></div>
-              </div>
-            </div>
+
 
             <div className="auth-happy-card">
               <h5>Happy Students</h5>
