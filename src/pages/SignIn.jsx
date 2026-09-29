@@ -1,140 +1,152 @@
 import React, { useState } from 'react';
 import './Auth.css';
 import { FcGoogle } from 'react-icons/fc';
-import { FaFacebook } from 'react-icons/fa';
-import { FiArrowLeft, FiMail, FiLock, FiEye, FiEyeOff } from 'react-icons/fi';
+import { FaFacebookF } from 'react-icons/fa';
+import { FiArrowLeft } from 'react-icons/fi';
 
 const SignIn = ({ onNavigate }) => {
-  const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Welcome back to ByteSpace! Signed in as ${email}`);
     onNavigate('home');
   };
 
   return (
-    <div className="auth-page">
-      {/* Left Blue Grid Showcase */}
-      <div className="auth-left blue-grid-bg">
+    <div className="auth-page blue-grid-bg">
+      {/* Top Left Header / Brand */}
+      <div className="auth-top-header">
         <button className="auth-back-btn" onClick={() => onNavigate('home')}>
           <FiArrowLeft /> Back to Home
         </button>
-
-        <div className="auth-brand" onClick={() => onNavigate('home')}>
-          <div className="logo-badge">
-            <span>b</span>
-          </div>
-          <span className="logo-text">ByteSpace</span>
-        </div>
-
-        <div className="auth-left-content">
-          <h1 className="auth-hero-title">
-            Get Access to Hundreds<br />
-            Courses Available
-          </h1>
-          <p className="auth-hero-desc">
-            Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
-          </p>
-
-          <div className="auth-visual-wrapper">
-            <img src="/assets/growth-boy.png" alt="ByteSpace Student" className="auth-student-img" />
-            <img src="/assets/3d-helix-white.png" alt="Shape" className="auth-shape-helix float-anim" />
-            <img src="/assets/3d-torus.png" alt="Shape" className="auth-shape-torus float-anim-reverse" />
-          </div>
-        </div>
       </div>
 
-      {/* Right Form Card */}
-      <div className="auth-right">
-        <div className="auth-form-card">
-          <div className="auth-header">
-            <h2>Welcome Back</h2>
-            <p>Sign in to your account to continue your learning journey.</p>
+      <div className="auth-container">
+        {/* Left Side Content */}
+        <div className="auth-left">
+          <div className="auth-brand" onClick={() => onNavigate('home')}>
+            <div className="logo-badge">
+              <span>b</span>
+            </div>
           </div>
 
-          <div className="social-buttons">
-            <button className="social-btn google-btn">
-              <FcGoogle className="social-icon" /> Continue with Google
-            </button>
-            <button className="social-btn facebook-btn">
-              <FaFacebook className="social-icon fb-color" /> Continue with Facebook
-            </button>
-          </div>
+          <h1 className="auth-left-title">Sign in with ease</h1>
+          <p className="auth-left-desc">
+            Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.
+          </p>
 
-          <div className="auth-divider">
-            <span>OR SIGN IN WITH EMAIL</span>
-          </div>
+          {/* Card Collage Visual */}
+          <div className="auth-collage-wrapper">
+            <img src="/assets/3d-torus.png" alt="Torus" className="auth-3d-torus float-anim" />
+            <img src="/assets/3d-pyramid.png" alt="Pyramid" className="auth-3d-pyramid float-anim-reverse" />
+            <img src="/assets/3d-helix-white.png" alt="Helix" className="auth-3d-helix float-anim" />
 
-          <form onSubmit={handleSubmit} className="auth-form">
-            <div className="form-group">
-              <label htmlFor="email">Email Address</label>
-              <div className="input-wrapper">
-                <FiMail className="input-icon" />
+            {/* Course Stack */}
+            <div className="auth-course-card card-back">
+              <div className="card-thumb-bg bg-build-asset"></div>
+              <h4>Build Digital Asset</h4>
+              <span className="card-author">by purepearl studio</span>
+              <div className="card-pill">Beginner</div>
+            </div>
+
+            <div className="auth-course-card card-front">
+              <div className="card-thumb-bg bg-power-data">
+                <div className="card-top-tags">
+                  <span>17 Lessons</span>
+                  <span>2 hours 16 mins</span>
+                  <span>59 Comments</span>
+                </div>
+              </div>
+              <div className="card-front-body">
+                <div className="card-title-row">
+                  <h4>the Power of Big Data</h4>
+                  <span className="card-rating">4.5 ★</span>
+                </div>
+                <span className="card-author">by purepearl studio</span>
+                <div className="card-meta-row">
+                  <span className="card-pill">Beginner</span>
+                  <div className="card-avatars">
+                    <img src="/assets/testimonial-1.png" alt="User" />
+                    <img src="/assets/testimonial-2.png" alt="User" />
+                    <img src="/assets/testimonial-3.png" alt="User" />
+                    <span className="more-count">26+</span>
+                  </div>
+                </div>
+                <div className="card-price">$25<span>/lifetime</span></div>
+              </div>
+            </div>
+
+            <div className="auth-happy-card">
+              <h5>Happy Students</h5>
+              <div className="happy-rating">4.5 (240) ★</div>
+              <div className="happy-avatars">
+                <img src="/assets/testimonial-1.png" alt="User" />
+                <img src="/assets/testimonial-2.png" alt="User" />
+                <img src="/assets/testimonial-3.png" alt="User" />
+                <img src="/assets/growth-boy.png" alt="User" />
+                <span className="more-count-lime">2K+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side Card Form */}
+        <div className="auth-right">
+          <div className="auth-card">
+            <span className="auth-sub-label">Sign In</span>
+            <h2 className="auth-card-title">Welcome Back</h2>
+
+            <form onSubmit={handleSubmit} className="auth-form-body">
+              <div className="auth-field-group">
+                <label>Email</label>
                 <input 
-                  id="email"
                   type="email" 
-                  placeholder="name@example.com"
+                  placeholder="designer@example.com" 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required 
                 />
               </div>
-            </div>
 
-            <div className="form-group">
-              <div className="label-row">
-                <label htmlFor="password">Password</label>
-                <a href="#" className="forgot-link" onClick={(e) => { e.preventDefault(); alert("Password reset link sent!"); }}>
-                  Forgot password?
-                </a>
-              </div>
-              <div className="input-wrapper">
-                <FiLock className="input-icon" />
+              <div className="auth-field-group">
+                <label>Password</label>
                 <input 
-                  id="password"
-                  type={showPassword ? "text" : "password"} 
-                  placeholder="••••••••"
+                  type="password" 
+                  placeholder="********" 
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required 
                 />
-                <button 
-                  type="button" 
-                  className="eye-btn"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? <FiEyeOff /> : <FiEye />}
+              </div>
+
+              <div className="auth-action-row">
+                <button type="submit" className="btn-primary auth-btn-submit">
+                  Sign In
                 </button>
               </div>
-            </div>
 
-            <div className="form-checkbox-row">
-              <label className="checkbox-container">
-                <input 
-                  type="checkbox" 
-                  checked={rememberMe}
-                  onChange={(e) => setRememberMe(e.target.checked)}
-                />
-                <span className="checkmark"></span>
-                Remember me for 30 days
-              </label>
-            </div>
+              <div className="auth-or-divider">
+                <span>or</span>
+              </div>
 
-            <button type="submit" className="btn-primary auth-submit-btn">
-              Sign In
-            </button>
-          </form>
+              <div className="social-circle-row">
+                <button type="button" className="social-circle-btn fb-circle">
+                  <FaFacebookF />
+                </button>
+                <button type="button" className="social-circle-btn google-circle">
+                  <FcGoogle />
+                </button>
+              </div>
 
-          <p className="auth-footer-text">
-            Don't have an account?{' '}
-            <button className="auth-switch-btn" onClick={() => onNavigate('signup')}>
-              Sign Up
-            </button>
-          </p>
+              <p className="auth-switch-text">
+                New user?{' '}
+                <button type="button" className="auth-link-btn" onClick={() => onNavigate('signup')}>
+                  Create an account
+                </button>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </div>
