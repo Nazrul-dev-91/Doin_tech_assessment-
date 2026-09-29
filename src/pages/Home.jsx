@@ -198,8 +198,35 @@ const Home = () => {
 
       {/* Split Section 2 */}
       <section className="split-section container reverse">
-        <div className="split-image">
+        <div className="split-image girl-image-wrapper">
           <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Manage" />
+          
+          <div className="revenue-card top-left">
+            <p>Total Revenue</p>
+            <span>July 1-28</span>
+            <h4>$120.29</h4>
+            <div className="progress-bar-bg"><div className="progress-bar-fill"></div></div>
+          </div>
+          
+          <div className="revenue-card bottom-left">
+            <p>Year to Date</p>
+            <span>2023</span>
+            <h4>$1,200.38</h4>
+            <div className="badge-green">+12$</div>
+          </div>
+          
+          <div className="floating-card card-students bottom-right">
+            <div className="students-info">
+              <h4>Happy Students</h4>
+              <p>4.5 (240) <Star size={12} fill="#facc15" stroke="none"/></p>
+            </div>
+            <div className="students-avatars">
+              <div className="avatar bg-blue"></div>
+              <div className="avatar bg-red"></div>
+              <div className="avatar bg-yellow"></div>
+              <div className="avatar bg-green">2K+</div>
+            </div>
+          </div>
         </div>
         <div className="split-content">
           <h2>Create & Manage<br/>Courses Easily.</h2>
@@ -217,29 +244,50 @@ const Home = () => {
       <section className="cta-banner container">
         <div className="cta-content bg-grid-pattern">
           <h2>Unlock Your Potential as a<br/>Creator with ByteSpace</h2>
-          <p>Join thousands of instructors around the globe who are monetizing their knowledge and impacting lives. Create courses, earn money, and be a part of our growing community.</p>
+          <p>Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.</p>
           <button className="btn-join">Join as Creator</button>
         </div>
       </section>
 
       {/* Testimonials */}
       <section className="testimonials-section container">
-        <div className="section-header text-center">
-          <h2>Discover What Our<br/>Community is Saying</h2>
+        <div className="section-header split-testi">
+          <h2>Discover What Our<br/>Community Is Saying</h2>
+          <p>At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.</p>
         </div>
         <div className="testimonials-grid">
-          {[1,2,3].map(i => (
-            <div className="testimonial-card" key={i}>
-              <div className="testi-header">
-                <img src={`https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80`} alt="User" />
-                <div>
-                  <h4>Jane D.</h4>
-                  <p>UI/UX Designer</p>
-                </div>
+          <div className="testimonial-card">
+            <div className="testi-header">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Sarah M." />
+              <div>
+                <h4>Sarah M.</h4>
+                <p>Enthusiastic Learner</p>
               </div>
-              <p className="testi-text">"ByteSpace is the best platform I've used for learning. The courses are top-notch and the community is super helpful. I landed a job right after completing a course here!"</p>
             </div>
-          ))}
+            <p className="testi-text">"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."</p>
+          </div>
+
+          <div className="testimonial-card">
+            <div className="testi-header">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="James L." />
+              <div>
+                <h4>James L.</h4>
+                <p>Lifelong Learner</p>
+              </div>
+            </div>
+            <p className="testi-text">"I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."</p>
+          </div>
+
+          <div className="testimonial-card">
+            <div className="testi-header">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Alex B." />
+              <div>
+                <h4>Alex B.</h4>
+                <p>Inspired Creator</p>
+              </div>
+            </div>
+            <p className="testi-text">"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally."</p>
+          </div>
         </div>
       </section>
     </div>
