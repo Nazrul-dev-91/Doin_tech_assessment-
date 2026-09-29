@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.logo-icon {
+  color: var(--primary-color);
+  font-size: 32px;
+  line-height: 1;
+}
+
+.navbar {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.navbar a:hover, .navbar a.active {
+  color: white;
+}
+
+.auth-cart {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.signin {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.signin:hover {
+  color: white;
+}
+
+.join {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.cart-btn {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

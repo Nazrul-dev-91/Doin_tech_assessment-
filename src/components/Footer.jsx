@@ -1,69 +1,54 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-top">
-          <div className="footer-brand">
-            <Link to="/" className="footer-logo">
-              <span className="logo-icon">b</span>
-              <span className="logo-text">ByteSpace</span>
-            </Link>
-            <p className="footer-desc">
-              Stay Up to date with our latest features and releases by joining our newsletter.
-            </p>
-            <div className="subscribe-form">
-              <input type="email" placeholder="Enter your email" />
-              <button>Search</button>
-            </div>
-            <p className="subscribe-note">
-              By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
-            </p>
+    <footer className="footer container">
+      <div className="footer-top">
+        <div className="footer-brand">
+          <div className="logo logo-dark">
+            <span className="logo-icon">b</span>
+            <span className="logo-text">ByteSpace</span>
           </div>
-          
-          <div className="footer-links">
-            <div className="link-group no-heading">
-              <ul>
-                <li><Link to="/">Featured Courses</Link></li>
-                <li><Link to="/">Featured Categories</Link></li>
-                <li><Link to="/">Business</Link></li>
-                <li><Link to="/">IT</Link></li>
-                <li><Link to="/">Design</Link></li>
-              </ul>
-            </div>
-            
-            <div className="link-group no-heading">
-              <ul>
-                <li><Link to="/">Development</Link></li>
-                <li><Link to="/">Marketing</Link></li>
-                <li><Link to="/">Photography</Link></li>
-                <li><Link to="/">Finance</Link></li>
-                <li><Link to="/">Sport</Link></li>
-              </ul>
-            </div>
-            
-            <div className="link-group no-heading">
-              <ul>
-                <li><Link to="/">Become a Creator</Link></li>
-                <li><Link to="/">Affiliate Program</Link></li>
-                <li><Link to="/">Contact</Link></li>
-                <li><Link to="/">Help</Link></li>
-                <li><Link to="/">About</Link></li>
-              </ul>
-            </div>
+          <p>Stay Up to date with our latest features and releases by joining our newsletter.</p>
+          <div className="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button className="btn-primary">Search</button>
+          </div>
+          <p className="privacy-text">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+        </div>
+
+        <div className="footer-links-grid">
+          <div className="footer-col">
+            <a href="#">Featured Courses</a>
+            <a href="#">Featured Categories</a>
+            <a href="#">Business</a>
+            <a href="#">IT</a>
+            <a href="#">Design</a>
+          </div>
+          <div className="footer-col">
+            <a href="#">Development</a>
+            <a href="#">Marketing</a>
+            <a href="#">Photography</a>
+            <a href="#">Finance</a>
+            <a href="#">Sport</a>
+          </div>
+          <div className="footer-col">
+            <a href="#">Become a Creator</a>
+            <a href="#">Affiliate Program</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+            <a href="#">About</a>
           </div>
         </div>
-        
-        <div className="footer-bottom">
-          <p>@ 2023 ByteSpace. All rights reserved.</p>
-          <div className="footer-bottom-links">
-            <Link to="/">Privacy Policy</Link>
-            <Link to="/">Terms of Service</Link>
-            <Link to="/">Cookies Settings</Link>
-          </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>&copy; 2023 ByteSpace. All rights reserved.</p>
+        <div className="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies Settings</a>
         </div>
       </div>
     </footer>
