@@ -203,7 +203,7 @@
 .btn-join { background: var(--color-accent); color: black; font-weight: 600; padding: 16px 32px; border-radius: 50px; font-size: 16px; }
 
 /* Testimonials */
-.testimonials-section { padding: 80px 24px 120px; }
+.testimonials-section { padding: 80px 24px 120px; background: radial-gradient(circle at top right, rgba(204,255,0,0.15) 0%, rgba(255,255,255,0) 50%), radial-gradient(circle at bottom left, rgba(15,61,250,0.1) 0%, rgba(255,255,255,0) 50%); }
 .section-header.split-testi { display: flex; align-items: center; gap: 40px; max-width: 100%; margin-bottom: 60px; text-align: left; }
 .section-header.split-testi h2 { flex: 1; font-size: 48px; margin: 0; line-height: 1.1; }
 .section-header.split-testi p { flex: 1; margin: 0; }
