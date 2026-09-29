@@ -8,7 +8,7 @@ const LearningPaths = () => {
     { name: 'Development', icon: <FiCode /> },
     { name: 'IT & Software', icon: <FiCpu /> },
     { name: 'Business', icon: <FiBriefcase /> },
-    { name: 'Marketing', icon: <FiMegaphone /> },
+    { name: 'Marketing', icon: <FiTarget /> },
     { name: 'Photography', icon: <FiCamera /> },
   ];
 
