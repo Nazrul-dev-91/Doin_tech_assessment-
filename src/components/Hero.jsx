@@ -48,7 +48,7 @@ const Hero = ({ onSearch }) => {
       <div className="hero-visual-container">
         {/* Green Arch Backdrop & Boy Image */}
         <div className="arch-wrapper">
-          <div className="arch-background"></div>
+          <img src="/assets/media__1790669330381.png" alt="Mask Group" className="arch-background-img" />
           <img src="/assets/hero-student.png" alt="ByteSpace Student" className="hero-student-img" />
 
           {/* Floating UI Cards */}
@@ -65,22 +65,11 @@ const Hero = ({ onSearch }) => {
             </div>
           </div>
 
-          <div className="hero-card card-happy-students float-anim">
-            <div className="students-header">
-              <span className="card-label">Happy Students</span>
-              <div className="rating-badge">
-                4.5 <span>(240)</span> <FiStar className="star-yellow" />
-              </div>
-            </div>
-            <div className="avatar-group">
-              <img src="/assets/testimonial-1.png" alt="Student" className="avatar-img" />
-              <img src="/assets/testimonial-2.png" alt="Student" className="avatar-img" />
-              <img src="/assets/testimonial-3.png" alt="Student" className="avatar-img" />
-              <img src="/assets/course-1.png" alt="Student" className="avatar-img" />
-              <img src="/assets/course-2.png" alt="Student" className="avatar-img" />
-              <span className="avatar-more">2K+</span>
-            </div>
-          </div>
+          <img 
+            src="/assets/media__1790669330337.png" 
+            alt="Happy Students" 
+            className="card-happy-students-img float-anim" 
+          />
         </div>
       </div>
     </section>
