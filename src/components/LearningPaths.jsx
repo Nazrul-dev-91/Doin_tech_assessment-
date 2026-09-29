@@ -80,7 +80,7 @@ const LearningPaths = () => {
           At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.
         </p>
       </div>
-      
+
       <div className="paths-grid">
         {paths.map((path, idx) => (
           <div key={idx} className="path-card">
