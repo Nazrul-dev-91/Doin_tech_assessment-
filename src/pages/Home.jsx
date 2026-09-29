@@ -30,46 +30,17 @@ const Home = () => {
           </div>
           
           <div className="hero-image-wrapper">
+            {/* The transparent shapes frame */}
+            <img src="/hero-shapes.png" alt="3D Shapes" className="hero-shapes-img" />
+            
+            {/* The boy hero image */}
             <div className="hero-circle"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Student" 
-              className="hero-main-img" 
-            />
+            <img src="/hero-boy.png" alt="Student" className="hero-main-img" />
             
-            {/* 3D Shapes */}
-            <ShapeSpring className="hero-shape hero-spring-top" color="green" />
-            <ShapeSpring className="hero-shape hero-spring-bottom" color="white" />
-            <ShapeDonut className="hero-shape hero-donut" color="white" />
-            <ShapeCylinder className="hero-shape hero-cylinder" color="green" />
-            <ShapeCone className="hero-shape hero-cone" />
-            <ShapeSpring className="hero-shape hero-spring-right" color="white" />
-            
-            <div className="floating-card card-uiux">
-              <h4>UI/UX Design</h4>
-              <p>200 Courses • 1000+ Students</p>
-            </div>
-            
-            <div className="floating-card card-progress">
-              <p className="progress-label">Learning Progress</p>
-              <h3 className="progress-value">55%</h3>
-              <div className="progress-bar-bg">
-                <div className="progress-bar-fill"></div>
-              </div>
-            </div>
-            
-            <div className="floating-card card-students">
-              <div className="students-info">
-                <h4>Happy Students</h4>
-                <p>4.5 (240) <Star className="star" size={12} fill="#facc15" stroke="none"/></p>
-              </div>
-              <div className="students-avatars">
-                <div className="avatar bg-blue"></div>
-                <div className="avatar bg-red"></div>
-                <div className="avatar bg-yellow"></div>
-                <div className="avatar bg-green">2K+</div>
-              </div>
-            </div>
+            {/* Floating Cards */}
+            <img src="/card-uiux.png" alt="UI/UX Design" className="floating-img card-uiux-img" />
+            <img src="/card-progress.png" alt="Learning Progress" className="floating-img card-progress-img" />
+            <img src="/card-students.png" alt="Happy Students" className="floating-img card-students-img" />
           </div>
         </div>
       </section>
@@ -257,10 +228,10 @@ const Home = () => {
           <p>Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.</p>
           <button className="btn-join">Join as Creator</button>
           
-          <ShapeCone className="cta-shape cta-cone" />
-          <ShapeDonut className="cta-shape cta-donut" color="green" />
-          <ShapeCylinder className="cta-shape cta-cylinder" color="white" />
-          <ShapeSpring className="cta-shape cta-spring" color="green" />
+          <img src="/shape-cone.png" alt="" className="cta-shape cta-cone" />
+          <img src="/shape-donut.png" alt="" className="cta-shape cta-donut" />
+          <img src="/shape-cylinder.png" alt="" className="cta-shape cta-cylinder" />
+          <img src="/shape-spring-green.png" alt="" className="cta-shape cta-spring" />
         </div>
       </section>
 
