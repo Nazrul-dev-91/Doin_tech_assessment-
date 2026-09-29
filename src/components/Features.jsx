@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import './Features.css';
 
 const Features = ({ activeCategory, onSelectCategory }) => {
-  const [selected, setSelected] = useState(activeCategory || 'Start-ups');
+  const [selected, setSelected] = useState(activeCategory || 'Featured');
 
   const categories = [
-    "Start-ups", "Skills", "Creative & Thinking", "Art & Living", 
-    "Data Science", "Audio & Music", "UI/UX Design", "Constantly Learning",
-    "Finance & Accounting", "Web & App Dev", "Gaming", 
-    "Personal & Professional Development", "Writing & Language", 
-    "Photography", "Free Flexibility", "Social Media Management", 
-    "Music Production", "Accounting", "+ More"
+    "Featured", "Music", "Drawing & Painting", "Marketing", 
+    "Animation", "Social Media", "UI/UX Design", "Creative Marketing",
+    "Digital Illustration", "Film & Video", "Crafts", 
+    "Freelance & Entrepreneurship", "Graphic Design", 
+    "Productivity", "Web Development", "Data Science", 
+    "Cooking", "+ More"
   ];
 
   const handlePillClick = (cat) => {
