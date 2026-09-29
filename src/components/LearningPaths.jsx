@@ -1,14 +1,14 @@
 import React from 'react';
 import './LearningPaths.css';
-import { FiPenTool, FiCode, FiCpu, FiBriefcase, FiTarget, FiCamera } from 'react-icons/fi';
+import { FiUsers, FiBriefcase, FiMonitor, FiCode, FiPenTool, FiCamera } from 'react-icons/fi';
 
 const LearningPaths = () => {
   const paths = [
-    { name: 'Design', icon: <FiPenTool /> },
-    { name: 'Development', icon: <FiCode /> },
-    { name: 'IT & Software', icon: <FiCpu /> },
+    { name: 'Marketing', icon: <FiUsers /> },
     { name: 'Business', icon: <FiBriefcase /> },
-    { name: 'Marketing', icon: <FiTarget /> },
+    { name: 'IT & Software', icon: <FiMonitor /> },
+    { name: 'Development', icon: <FiCode /> },
+    { name: 'Design', icon: <FiPenTool /> },
     { name: 'Photography', icon: <FiCamera /> },
   ];
 
@@ -17,7 +17,7 @@ const LearningPaths = () => {
       <div className="learning-paths-header">
         <h2 className="paths-title">Explore Diverse Learning Paths at ByteSpace</h2>
         <p className="paths-subtitle">
-          At ByteSpace, we believe in empowering individuals with the skills they need to succeed in their careers. That's why we offer a wide range of courses, carefully curated to help you unlock your potential.
+          At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.
         </p>
       </div>
       
@@ -36,4 +36,5 @@ const LearningPaths = () => {
 };
 
 export default LearningPaths;
+
 
