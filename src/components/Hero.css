@@ -72,7 +72,7 @@
 .hero-visual-container {
   position: relative;
   margin-top: 24px;
-  min-height: 480px;
+  min-height: 420px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -82,8 +82,8 @@
 /* Arch Background Backdrop */
 .arch-wrapper {
   position: relative;
-  width: 780px;
-  height: 560px;
+  width: 750px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -92,22 +92,22 @@
 .arch-background {
   position: absolute;
   bottom: 0;
-  width: 780px;
-  height: 550px;
+  width: 680px;
+  height: 350px;
   background-color: var(--primary-color);
-  border-top-left-radius: 390px;
-  border-top-right-radius: 390px;
+  border-top-left-radius: 340px;
+  border-top-right-radius: 340px;
   z-index: 1;
 }
 
 .hero-student-img {
   position: relative;
   z-index: 2;
-  height: 560px;
+  height: 420px;
   object-fit: contain;
   margin-bottom: 0;
   display: block;
-  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
 }
 
 /* Floating UI Cards */
@@ -177,80 +177,23 @@
   border-radius: 10px;
 }
 
-.card-happy-students {
-  bottom: 40px;
-  left: -90px;
-  min-width: 240px;
-}
+
 
 .card-happy-students-img {
   position: absolute;
   bottom: 40px;
-  left: -80px;
-  width: 260px;
+  left: -70px;
+  width: 160px;
   height: auto;
   z-index: 10;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.14));
 }
 
-.students-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
 
-.rating-badge {
-  font-size: 12px;
-  font-weight: 700;
-  color: #0F172A;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
 
-.rating-badge span {
-  color: #94A3B8;
-  font-weight: 400;
-}
 
-.star-yellow {
-  color: #F59E0B;
-  fill: #F59E0B;
-}
 
-.avatar-group {
-  display: flex;
-  align-items: center;
-}
 
-.avatar-img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 2px solid #FFFFFF;
-  margin-left: -8px;
-  object-fit: cover;
-}
-
-.avatar-img:first-child {
-  margin-left: 0;
-}
-
-.avatar-more {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  color: #000000;
-  font-size: 10px;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #FFFFFF;
-  margin-left: -8px;
-}
 
 /* Floating 3D Shapes */
 .shape {
@@ -301,37 +244,51 @@
   .hero-title {
     font-size: 46px;
   }
+
   .arch-wrapper {
     width: 100%;
     max-width: 500px;
   }
+
   .arch-background {
     width: 100%;
     height: 300px;
   }
+
   .hero-student-img {
     height: 380px;
   }
-  .card-ui-ux { left: 0; }
-  .card-progress { right: 0; }
-  .card-happy-students { left: 0; }
+
+  .card-ui-ux {
+    left: 0;
+  }
+
+  .card-progress {
+    right: 0;
+  }
+
+  .card-happy-students {
+    left: 0;
+  }
 }
 
 @media (max-width: 640px) {
   .hero-title {
     font-size: 34px;
   }
+
   .hero-search-bar {
     flex-direction: column;
     padding: 12px;
     border-radius: 24px;
     gap: 12px;
   }
+
   .hero-search-bar .search-btn {
     width: 100%;
   }
+
   .shape {
     display: none;
   }
 }
-

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Hero.css';
-import { FiSearch, FiStar } from 'react-icons/fi';
+import { FiSearch } from 'react-icons/fi';
 
 const Hero = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -66,7 +66,7 @@ const Hero = ({ onSearch }) => {
           </div>
 
           <img 
-            src="/assets/media__1790669330337.png" 
+            src="/assets/card-happy-students.png" 
             alt="Happy Students" 
             className="card-happy-students-img float-anim" 
           />
