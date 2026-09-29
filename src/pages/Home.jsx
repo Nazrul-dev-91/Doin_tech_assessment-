@@ -9,6 +9,7 @@ const Home = () => {
     <div className="home-page">
       {/* Hero Section */}
       <section className="hero-section bg-grid-pattern">
+        <img src="/hero-shapes.png" alt="3D Shapes" className="hero-shapes-img" />
         <div className="container hero-container">
           <div className="hero-content">
             <h1 className="hero-title">Get Access to Hundreds<br/>Courses Available</h1>
@@ -30,9 +31,6 @@ const Home = () => {
           </div>
           
           <div className="hero-image-wrapper">
-            {/* The transparent shapes frame */}
-            <img src="/hero-shapes.png" alt="3D Shapes" className="hero-shapes-img" />
-            
             {/* The boy hero image */}
             <div className="hero-circle"></div>
             <img src="/hero-boy.png" alt="Student" className="hero-main-img" />
