@@ -19,23 +19,24 @@ const Features = ({ activeCategory, onSelectCategory }) => {
   };
 
   const partnerLogos = [
-    { id: 1, name: "Logoipsum", icon: "❖" },
-    { id: 2, name: "Logoipsum", icon: "⬡" },
-    { id: 3, name: "Logoipsum", icon: "◈" },
-    { id: 4, name: "Logoipsum", icon: "⬢" },
-    { id: 5, name: "Logoipsum", icon: "❇" },
+    { id: 1, name: "Logoipsum 1", img: "/assets/partner-logo-1.png" },
+    { id: 2, name: "Logoipsum 2", img: "/assets/partner-logo-2.png" },
+    { id: 3, name: "Logoipsum 3", img: "/assets/partner-logo-3.png" },
+    { id: 4, name: "Logoipsum 4", img: "/assets/partner-logo-4.png" },
+    { id: 5, name: "Logoipsum 5", img: "/assets/partner-logo-5.png" },
   ];
 
   return (
     <section className="features">
       {/* Partner Logos Bar */}
-      <div className="logos-bar container">
-        {partnerLogos.map((logo) => (
-          <div key={logo.id} className="partner-logo">
-            <span className="logo-symbol">{logo.icon}</span>
-            <span className="logo-name">{logo.name}</span>
-          </div>
-        ))}
+      <div className="logos-bar-section">
+        <div className="logos-bar container">
+          {partnerLogos.map((logo) => (
+            <div key={logo.id} className="partner-logo-item">
+              <img src={logo.img} alt={logo.name} className="partner-logo-img" />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="container discover-section">

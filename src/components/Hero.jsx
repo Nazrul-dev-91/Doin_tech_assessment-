@@ -12,13 +12,13 @@ const Hero = ({ onSearch }) => {
 
   return (
     <section className="hero container">
-      {/* Floating 3D Shapes positioned across the entire Hero section */}
-      <img src="/assets/shape-lime-helix-real.png" alt="Lime Helix" className="shape shape-lime-helix float-anim" />
-      <img src="/assets/shape-white-helix-real.png" alt="White Helix" className="shape shape-white-helix-left float-anim-reverse" />
-      <img src="/assets/3d-torus.png" alt="White Torus" className="shape shape-white-torus float-anim" />
+      {/* Floating 3D Shapes matching Figma layout */}
+      <img src="/assets/shape-lime-helix-clean.png" alt="Lime Helix" className="shape shape-lime-helix float-anim" />
+      <img src="/assets/shape-white-helix-clean.png" alt="White Helix" className="shape shape-white-helix-left float-anim-reverse" />
+      <img src="/assets/shape-white-torus-clean.png" alt="White Torus" className="shape shape-white-torus float-anim" />
       <img src="/assets/shape-lime-cylinder-real.png" alt="Lime Cylinder" className="shape shape-lime-cylinder float-anim-reverse" />
-      <img src="/assets/shape-white-pyramid-real.png" alt="White Pyramid" className="shape shape-white-pyramid float-anim" />
-      <img src="/assets/shape-white-helix-real.png" alt="White Helix" className="shape shape-white-helix-right float-anim-reverse" />
+      <img src="/assets/shape-white-pyramid-clean.png" alt="White Pyramid" className="shape shape-white-pyramid float-anim" />
+      <img src="/assets/shape-white-helix-clean.png" alt="White Helix" className="shape shape-white-helix-right float-anim-reverse" />
 
       {/* Top Text Content */}
       <div className="hero-content">
@@ -44,32 +44,17 @@ const Hero = ({ onSearch }) => {
         </form>
       </div>
 
-      {/* Visual Centerpiece with Floating 3D Assets & Cards */}
+      {/* Visual Centerpiece */}
       <div className="hero-visual-container">
-        {/* Green Arch Backdrop & Boy Image */}
         <div className="arch-wrapper">
-          <div className="arch-background"></div>
+          {/* Arch Backdrop & Student Image */}
+          <img src="/assets/hero-arch-clean.png" alt="Hero Arch" className="hero-arch-img" />
           <img src="/assets/hero-student.png" alt="ByteSpace Student" className="hero-student-img" />
 
           {/* Floating UI Cards */}
-          <div className="hero-card card-ui-ux float-anim">
-            <h4>UI/UX Design</h4>
-            <p>200 Courses • 1000+ Students</p>
-          </div>
-
-          <div className="hero-card card-progress float-anim-reverse">
-            <span className="card-label">Learning Progress</span>
-            <div className="progress-value">55%</div>
-            <div className="progress-bar-track">
-              <div className="progress-bar-fill" style={{ width: '55%' }}></div>
-            </div>
-          </div>
-
-          <img 
-            src="/assets/card-happy-students.png" 
-            alt="Happy Students" 
-            className="card-happy-students-img float-anim" 
-          />
+          <img src="/assets/card-ui-ux-clean.png" alt="UI/UX Design Card" className="hero-card card-ui-ux-img float-anim" />
+          <img src="/assets/card-progress-clean.png" alt="Learning Progress Card" className="hero-card card-progress-img float-anim-reverse" />
+          <img src="/assets/card-happy-students-clean.png" alt="Happy Students Card" className="hero-card card-happy-img float-anim" />
         </div>
       </div>
     </section>
