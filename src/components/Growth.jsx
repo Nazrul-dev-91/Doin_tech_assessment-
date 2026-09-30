@@ -1,10 +1,15 @@
 import React from 'react';
 import './Growth.css';
-import { FiCheckCircle, FiTrendingUp } from 'react-icons/fi';
 
 const Growth = () => {
   return (
     <section className="growth-section container" id="creators">
+      {/* Background Blur Color Glows matching Figma design */}
+      <img src="/assets/bg-glow-lime-center.png" alt="" className="growth-bg-glow glow-top-center" />
+      <img src="/assets/bg-glow-blue-dark.png" alt="" className="growth-bg-glow glow-mid-left" />
+      <img src="/assets/bg-glow-lime-top.png" alt="" className="growth-bg-glow glow-bot-left" />
+      <img src="/assets/bg-glow-blue-soft.png" alt="" className="growth-bg-glow glow-bot-right" />
+
       {/* Section 1: Professional Growth */}
       <div className="growth-grid">
         <div className="growth-text-col">
@@ -13,77 +18,76 @@ const Growth = () => {
             Growth Starts Here!
           </h2>
           <p className="growth-desc">
-            Opt for ByteSpace for a dynamic learning journey. Benefit from expert-led courses, engaging practical projects, and a community dedicated to lifelong learning. Your career advancement begins with us.
+            Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
           </p>
 
-          <div className="stats-row">
-            <div className="stat-card">
-              <h3 className="stat-num">12K</h3>
-              <span className="stat-label">Students</span>
+          <div className="growth-stats-row">
+            <div className="growth-stat-item">
+              <span className="growth-stat-num">12K</span>
+              <span className="growth-stat-label">Students</span>
             </div>
-            <div className="stat-divider"></div>
-            <div className="stat-card">
-              <h3 className="stat-num">70+</h3>
-              <span className="stat-label">Courses</span>
+            <div className="growth-stat-item">
+              <span className="growth-stat-num">70+</span>
+              <span className="growth-stat-label">Courses</span>
             </div>
-            <div className="stat-divider"></div>
-            <div className="stat-card">
-              <h3 className="stat-num">18</h3>
-              <span className="stat-label">Mentors</span>
+            <div className="growth-stat-item">
+              <span className="growth-stat-num">16</span>
+              <span className="growth-stat-label">Creators</span>
             </div>
           </div>
         </div>
 
         <div className="growth-visual-col">
-          <div className="image-card-container">
-            <img src="/assets/growth-boy.png" alt="Professional Growth Student" className="growth-img" />
-            <img src="/assets/3d-helix-white.png" alt="Shape" className="growth-shape-helix float-anim" />
+          <div className="growth-collage-container">
+            {/* Background Course Card */}
+            <img src="/assets/course-card-1.png" alt="Figma Course Card" className="collage-bg-card" />
+            
+            {/* 3D Lime Helix Shape */}
+            <img src="/assets/shape-white-helix-green.png" alt="Lime Helix" className="collage-helix-shape float-anim" />
 
-            {/* Floating Overlays */}
-            <div className="floating-card float-card-top float-anim">
-              <div className="card-badge-dot"></div>
-              <div>
-                <h5>Learn UI/UX Design</h5>
-                <span>17 Lessons • 2h 16m</span>
-              </div>
-            </div>
+            {/* Clean Learning Progress 55% Card PNG from Figma */}
+            <img src="/assets/card-progress-clean.png" alt="Learning Progress 55%" className="floating-progress-pill-img float-anim-reverse" />
 
-            <div className="floating-card float-card-bottom float-anim-reverse">
-              <span className="card-small-label">Learning Progress</span>
-              <div className="progress-percent">55%</div>
-              <div className="mini-progress-bar">
-                <div className="mini-progress-fill" style={{ width: '55%' }}></div>
-              </div>
-            </div>
+            {/* Foreground Student Boy */}
+            <img src="/assets/hero-student.png" alt="Student" className="collage-student-boy" />
           </div>
         </div>
       </div>
 
-      {/* Section 2: Create & Manage Courses */}
+      {/* Section 2: Create & Manage Courses Easily */}
       <div className="growth-grid growth-grid-reversed">
         <div className="growth-visual-col">
-          <div className="image-card-container">
-            <img src="/assets/growth-woman.png" alt="Course Creator" className="growth-img" />
-            <img src="/assets/3d-helix-white.png" alt="Shape" className="growth-shape-helix-left float-anim-reverse" />
+          <div className="growth-collage-container cta-collage-container">
+            {/* 3D Helix Shape */}
+            <img src="/assets/shape-white-helix-green_r.png" alt="Lime Helix" className="cta-helix-shape float-anim" />
 
-            {/* Floating Overlays */}
-            <div className="floating-card float-card-earnings float-anim">
-              <div className="earnings-header">
-                <span>Total Earnings</span>
-                <span className="earnings-badge"><FiTrendingUp /> +12.4%</span>
+            {/* Blue Card 1: Total Revenue */}
+            <div className="blue-stat-card card-revenue float-anim-reverse">
+              <div className="blue-card-top">
+                <div>
+                  <div className="blue-card-title">Total Revenue</div>
+                  <div className="blue-card-sub">July 1-28</div>
+                </div>
               </div>
-              <div className="earnings-amount">$5,140.65</div>
-            </div>
-
-            <div className="floating-card float-card-audience float-anim-reverse">
-              <span>Engaged Audience</span>
-              <div className="audience-avatars">
-                <img src="/assets/testimonial-1.png" alt="User" className="aud-avatar" />
-                <img src="/assets/testimonial-2.png" alt="User" className="aud-avatar" />
-                <img src="/assets/testimonial-3.png" alt="User" className="aud-avatar" />
-                <span className="aud-more">+1.4K</span>
+              <div className="blue-card-val">$120.29</div>
+              <div className="blue-card-progress">
+                <div className="blue-card-fill" style={{ width: '30%' }}></div>
               </div>
             </div>
+
+            {/* Blue Card 2: Year to Date */}
+            <div className="blue-stat-card card-ytd float-anim">
+              <div className="blue-card-title">Year to Date</div>
+              <div className="blue-card-sub">2023</div>
+              <div className="blue-card-val">$1,200.38</div>
+              <span className="blue-card-badge">+12$</span>
+            </div>
+
+            {/* Foreground Woman */}
+            <img src="/assets/growth-woman.png" alt="Creator Woman" className="collage-creator-woman" />
+
+            {/* Clean Happy Students Card PNG from Figma */}
+            <img src="/assets/card-happy-students-clean.png" alt="Happy Students" className="happy-students-card-img float-anim-reverse" />
           </div>
         </div>
 
@@ -93,24 +97,36 @@ const Growth = () => {
             Courses Easily.
           </h2>
           <p className="growth-desc">
-            <strong className="text-brand">ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.
+            <strong className="text-bold-brand">ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.
           </p>
 
-          <ul className="feature-checklist">
+          <ul className="cta-checklist-vertical">
             <li>
-              <FiCheckCircle className="check-icon" />
+              <svg className="blue-check-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#0048FE"/>
+                <path d="M7 12.5L10.5 16L17.5 8.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
               <span>Share Your Expertise</span>
             </li>
             <li>
-              <FiCheckCircle className="check-icon" />
+              <svg className="blue-check-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#0048FE"/>
+                <path d="M7 12.5L10.5 16L17.5 8.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
               <span>Monetize Your Passion</span>
             </li>
             <li>
-              <FiCheckCircle className="check-icon" />
+              <svg className="blue-check-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#0048FE"/>
+                <path d="M7 12.5L10.5 16L17.5 8.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
               <span>Flexibility and Autonomy</span>
             </li>
             <li>
-              <FiCheckCircle className="check-icon" />
+              <svg className="blue-check-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#0048FE"/>
+                <path d="M7 12.5L10.5 16L17.5 8.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
               <span>Build a Community</span>
             </li>
           </ul>
@@ -121,4 +137,3 @@ const Growth = () => {
 };
 
 export default Growth;
-

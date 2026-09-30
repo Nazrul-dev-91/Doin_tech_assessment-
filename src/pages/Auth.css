@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 30px 50px;
+  padding: 20px 40px 70px;
   position: relative;
   overflow-x: hidden;
   color: #FFFFFF;
@@ -11,8 +11,8 @@
 
 .auth-top-header {
   position: absolute;
-  top: 30px;
-  left: 50px;
+  top: 20px;
+  left: 40px;
   z-index: 20;
 }
 
@@ -39,9 +39,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 60px;
-  max-width: 1240px;
-  margin: 60px auto 0;
+  gap: 40px;
+  max-width: 1120px;
+  margin: 30px auto 0;
   width: 100%;
 }
 
@@ -53,272 +53,88 @@
 }
 
 .auth-brand {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
 .auth-left-title {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 800;
   color: #FFFFFF;
   line-height: 1.15;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   letter-spacing: -0.5px;
 }
 
 .auth-left-desc {
-  font-size: 15px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.6;
-  max-width: 440px;
-  margin-bottom: 40px;
+  line-height: 1.5;
+  max-width: 420px;
+  margin-bottom: 24px;
 }
 
 /* Auth Collage Stack */
 .auth-collage-wrapper {
   position: relative;
-  height: 380px;
+  height: 400px;
   width: 100%;
   max-width: 460px;
 }
 
-.auth-course-card {
+.auth-course-card-back {
   position: absolute;
-  background: #FFFFFF;
-  border-radius: 20px;
-  padding: 14px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  color: #0F172A;
-  transition: var(--transition);
-}
-
-.card-back {
-  width: 240px;
-  top: 40px;
+  top: 90px;
   left: 0;
+  width: 290px;
+  height: auto;
   z-index: 2;
-  opacity: 0.9;
-  transform: rotate(-4deg);
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
 }
 
-.card-front {
-  width: 320px;
-  top: 0;
-  left: 70px;
+.auth-course-card-front {
+  position: absolute;
+  top: -10px;
+  left: 90px;
+  width: 315px;
+  height: auto;
   z-index: 5;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
 }
 
-.card-thumb-bg {
-  height: 140px;
-  border-radius: 14px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.bg-power-data {
-  background-image: url('/assets/course-3.png');
-}
-
-.bg-build-asset {
-  background-image: url('/assets/course-2.png');
-}
-
-.card-top-tags {
+.auth-happy-card-img {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  display: flex;
-  gap: 6px;
-}
-
-.card-top-tags span {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(4px);
-  padding: 3px 8px;
-  border-radius: 6px;
-  font-size: 10px;
-  font-weight: 600;
-  color: #0F172A;
-}
-
-.card-front-body {
-  padding-top: 12px;
-}
-
-.card-title-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.card-title-row h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #0F172A;
-  margin: 0;
-}
-
-.card-rating {
-  font-size: 12px;
-  font-weight: 700;
-  color: #0F172A;
-}
-
-.card-author {
-  font-size: 11px;
-  color: var(--bg-blue);
-  font-weight: 600;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.card-meta-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.card-pill {
-  font-size: 11px;
-  background: #F1F5F9;
-  padding: 3px 10px;
-  border-radius: 12px;
-  color: #475569;
-  font-weight: 600;
-}
-
-.card-avatars {
-  display: flex;
-  align-items: center;
-}
-
-.card-avatars img {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid #FFFFFF;
-  margin-left: -6px;
-  object-fit: cover;
-}
-
-.card-avatars img:first-child {
-  margin-left: 0;
-}
-
-.more-count {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #000000;
-  color: #FFFFFF;
-  font-size: 9px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -6px;
-  border: 2px solid #FFFFFF;
-}
-
-.card-price {
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--bg-blue);
-}
-
-.card-price span {
-  font-size: 11px;
-  color: #94A3B8;
-  font-weight: 500;
-}
-
-/* Lime Happy Students Card */
-.auth-happy-card {
-  position: absolute;
-  bottom: 20px;
-  left: 120px;
-  background-color: var(--primary-color);
-  color: #000000;
-  border-radius: 18px;
-  padding: 14px 18px;
+  bottom: -40px;
+  right: 0px;
+  width: 245px;
+  height: auto;
   z-index: 10;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  min-width: 210px;
-}
-
-.auth-happy-card h5 {
-  font-size: 13px;
-  font-weight: 800;
-  margin-bottom: 2px;
-}
-
-.happy-rating {
-  font-size: 11px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.happy-avatars {
-  display: flex;
-  align-items: center;
-}
-
-.happy-avatars img {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 2px solid #FFFFFF;
-  margin-left: -6px;
-  object-fit: cover;
-}
-
-.happy-avatars img:first-child {
-  margin-left: 0;
-}
-
-.more-count-lime {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #000000;
-  color: #FFFFFF;
-  font-size: 9px;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -6px;
-  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
 }
 
 /* Floating 3D Assets */
 .auth-3d-torus {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 55px;
+  left: 40px;
   width: 80px;
   z-index: 6;
 }
 
 .auth-3d-pyramid {
   position: absolute;
-  bottom: 0px;
-  left: -20px;
-  width: 90px;
+  bottom: -45px;
+  left: -15px;
+  width: 110px;
   z-index: 12;
 }
 
 .auth-3d-helix {
   position: absolute;
-  bottom: 60px;
-  right: 10px;
-  width: 90px;
-  z-index: 12;
+  bottom: 5px;
+  right: 5px;
+  width: 125px;
+  z-index: 15;
 }
 
 /* Right Side Card */

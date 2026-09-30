@@ -31,41 +31,66 @@
   line-height: 1.6;
 }
 
-/* Search Bar */
-.hero-search-bar {
+/* Search Bar & Form */
+.hero-search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.hero-search-input-box {
   background: #FFFFFF;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  padding: 6px 6px 6px 24px;
-  max-width: 580px;
-  margin: 0 auto;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  flex: 1;
+  max-width: 340px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-.hero-search-bar .search-icon {
+.hero-search-input-box .search-icon {
   color: #94A3B8;
-  font-size: 22px;
-  margin-right: 12px;
+  font-size: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
-.hero-search-bar input {
+.hero-search-input-box input {
   flex: 1;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
   color: #0F172A;
   background: transparent;
+  width: 100%;
 }
 
-.hero-search-bar input::placeholder {
+.hero-search-input-box input::placeholder {
   color: #94A3B8;
 }
 
-.hero-search-bar .search-btn {
-  padding: 12px 32px;
-  border-radius: 40px;
+.hero-search-form .search-btn {
+  padding: 11px 28px;
+  border-radius: 50px;
   font-size: 15px;
+  font-weight: 700;
+  background-color: #D2FF00;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(210, 255, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-search-form .search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(210, 255, 0, 0.5);
 }
 
 /* Visual Container */
@@ -142,45 +167,44 @@
   z-index: 4;
   pointer-events: none;
   height: auto;
-  filter: contrast(1.06) brightness(1.03) drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
 }
 
 .shape-lime-helix {
-  width: 175px;
-  top: 15px;
-  left: 15px;
+  width: 200px;
+  top: 70px;
+  left: -60px;
 }
 
 .shape-white-helix-left {
-  width: 135px;
-  top: 230px;
-  left: 150px;
+  width: 165px;
+  top: 280px;
+  left: 120px;
 }
 
 .shape-white-torus {
-  width: 250px;
-  bottom: 0px;
-  left: -20px;
+  width: 200px;
+  bottom: -15px;
+  left: 30px;
   z-index: 2;
 }
 
 .shape-lime-cylinder {
-  width: 195px;
-  top: 15px;
-  right: 15px;
+  width: 190px;
+  top: 70px;
+  right: -65px;
 }
 
 .shape-white-pyramid {
-  width: 150px;
-  top: 220px;
-  right: 150px;
+  width: 170px;
+  top: 300px;
+  right: 200px;
 }
 
 .shape-white-helix-right {
-  width: 165px;
-  bottom: 10px;
-  right: -10px;
+  width: 200px;
+  bottom: 20px;
+  right: 20px;
 }
 
 /* Responsive adjustments */

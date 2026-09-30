@@ -4,11 +4,27 @@ import './CTA.css';
 const CTA = ({ onJoinCreator }) => {
   return (
     <section className="cta-section blue-grid-bg">
-      {/* Floating 3D Shapes */}
-      <img src="/assets/3d-helix-white.png" alt="3D Helix" className="cta-shape shape-top-left float-anim" />
-      <img src="/assets/3d-cylinder.png" alt="3D Cylinder" className="cta-shape shape-top-right float-anim-reverse" />
-      <img src="/assets/3d-torus.png" alt="3D Torus" className="cta-shape shape-bottom-left float-anim" />
-      <img src="/assets/3d-pyramid.png" alt="3D Pyramid" className="cta-shape shape-bottom-right float-anim-reverse" />
+      {/* Floating 3D Shapes matching Figma Frame */}
+      {/* 1. Top Far Left: Lime Helix */}
+      <img src="/assets/shape-white-helix-green_r.png" alt="Lime Helix" className="cta-shape shape-lime-helix-topleft float-anim" />
+
+      {/* 2. Top Inner Left: White Helix */}
+      <img src="/assets/shape-white-helix-real_r.png" alt="White Helix" className="cta-shape shape-white-helix-topleft float-anim-reverse" />
+
+      {/* 3. Bottom Far Left: White Pyramid */}
+      <img src="/assets/Cone _white.png" alt="White Pyramid" className="cta-shape shape-white-pyramid-botleft float-anim" />
+
+      {/* 4. Bottom Inner Left: Lime Torus */}
+      <img src="/assets/shape-green-cone-real.png" alt="Lime Torus" className="cta-shape shape-lime-torus-botleft float-anim-reverse" />
+
+      {/* 5. Top Inner Right: Lime Pyramid */}
+      <img src="/assets/Mask_Group _green.png" alt="Lime Pyramid" className="cta-shape shape-lime-pyramid-topright float-anim" />
+
+      {/* 6. Top Far Right: White Cylinder */}
+      <img src="/assets/Cylinder-white.png" alt="White Cylinder" className="cta-shape shape-white-cylinder-topright float-anim-reverse" />
+
+      {/* 7. Bottom Far Right: Lime Helix */}
+      <img src="/assets/shape-white-helix-green.png" alt="Lime Helix" className="cta-shape shape-lime-helix-botright float-anim" />
 
       <div className="container cta-container">
         <h2 className="cta-title">
