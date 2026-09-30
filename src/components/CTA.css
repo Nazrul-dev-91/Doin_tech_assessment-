@@ -1,5 +1,5 @@
 .cta-section {
-  padding: 100px 0;
+  padding: 110px 0;
   text-align: center;
   color: white;
   position: relative;
@@ -14,7 +14,7 @@
 }
 
 .cta-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 24px;
@@ -23,11 +23,11 @@
 }
 
 .cta-desc {
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 13px;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 40px;
-  max-width: 740px;
+  max-width: 780px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -36,6 +36,17 @@
   padding: 14px 36px;
   font-size: 16px;
   border-radius: 50px;
+  background-color: #D2FF00;
+  color: #000000;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(210, 255, 0, 0.4);
 }
 
 /* Floating 3D Shapes */
@@ -45,36 +56,66 @@
   pointer-events: none;
 }
 
-.shape-top-left {
-  top: 40px;
-  left: 5%;
+/* 1. Top Far Left Lime Helix */
+.shape-lime-helix-topleft {
+  top: -140px;
+  left: -110px;
+  width: Hug(350px);
+  height: 350px;
+  transform: rotate(-80deg);
+}
+
+/* 2. Top Inner Left White Helix */
+.shape-white-helix-topleft {
+  top: 23px;
+  left: 181px;
+  width: Hug(105px);
+  transform: rotate(20deg);
+}
+
+/* 3. Bottom Far Left White Pyramid */
+.shape-white-pyramid-botleft {
+  bottom: 15%;
+  left: -10px;
   width: 130px;
 }
 
-.shape-top-right {
+/* 4. Bottom Inner Left Lime Torus */
+.shape-lime-torus-botleft {
+  bottom: -5px;
+  left: 40px;
+  width: Hug(190px);
+}
+
+/* 5. Top Inner Right Lime Pyramid */
+.shape-lime-pyramid-topright {
+  top: 10px;
+  right: 170px;
+  width: Hug(135px);
+}
+
+/* 6. Top Far Right White Cylinder */
+.shape-white-cylinder-topright {
   top: 30px;
-  right: 5%;
-  width: 140px;
+  right: -10px;
+  width: 210px;
 }
 
-.shape-bottom-left {
-  bottom: 30px;
-  left: 6%;
-  width: 140px;
+/* 7. Bottom Far Right Lime Helix */
+.shape-lime-helix-botright {
+  bottom: -120px;
+  right: -10px;
+  width: 270px;
+  height: 270px;
 }
 
-.shape-bottom-right {
-  bottom: 20px;
-  right: 6%;
-  width: 120px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .cta-title {
     font-size: 32px;
   }
   .cta-shape {
-    display: none;
+    opacity: 0.5;
   }
 }
+
 

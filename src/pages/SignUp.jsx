@@ -33,33 +33,25 @@ const SignUp = ({ onNavigate }) => {
             The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost
           </p>
 
-          {/* Card Collage Visual */}
+          {/* Card Collage Visual matching Figma sample */}
           <div className="auth-collage-wrapper">
-            <img src="/assets/3d-torus.png" alt="Torus" className="auth-3d-torus float-anim" />
-            <img src="/assets/3d-pyramid.png" alt="Pyramid" className="auth-3d-pyramid float-anim-reverse" />
-            <img src="/assets/3d-helix-white.png" alt="Helix" className="auth-3d-helix float-anim" />
+            {/* Top Left: Lime Torus */}
+            <img src="/assets/auth-lime-torus.png" alt="Lime Torus" className="auth-3d-torus float-anim" />
 
-            {/* Course Stack */}
-            <div className="auth-course-card card-back">
-              <div className="card-thumb-bg bg-build-asset"></div>
-              <h4>Build Digital Asset</h4>
-              <span className="card-author">by purepearl studio</span>
-              <div className="card-pill">Beginner</div>
-            </div>
+            {/* Back Course Card: Build Digital Asset */}
+            <img src="/assets/auth-course-build-asset.png" alt="Build Digital Asset Course" className="auth-course-card-back" />
 
+            {/* Front Course Card: the Power of Big Data */}
+            <img src="/assets/auth-course-power-data.png" alt="The Power of Big Data Course" className="auth-course-card-front" />
 
+            {/* Bottom Left: Lime Pyramid */}
+            <img src="/assets/auth-lime-pyramid.png" alt="Lime Pyramid" className="auth-3d-pyramid float-anim-reverse" />
 
-            <div className="auth-happy-card">
-              <h5>Happy Students</h5>
-              <div className="happy-rating">4.5 (240) ★</div>
-              <div className="happy-avatars">
-                <img src="/assets/testimonial-1.png" alt="User" />
-                <img src="/assets/testimonial-2.png" alt="User" />
-                <img src="/assets/testimonial-3.png" alt="User" />
-                <img src="/assets/growth-boy.png" alt="User" />
-                <span className="more-count-lime">2K+</span>
-              </div>
-            </div>
+            {/* Bottom Right: White Helix */}
+            <img src="/assets/auth-white-helix.png" alt="White Helix" className="auth-3d-helix float-anim" />
+
+            {/* Bottom Right: Lime Happy Students Card */}
+            <img src="/assets/auth-happy-lime.png" alt="Happy Students" className="auth-happy-card-img float-anim-reverse" />
           </div>
         </div>
 

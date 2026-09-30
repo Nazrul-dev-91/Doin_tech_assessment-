@@ -17,7 +17,7 @@ const Testimonials = () => {
       name: 'James L.',
       role: 'Lifelong Learner',
       text: '"I\'ve tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."',
-      img: '/assets/testimonial-2.png',
+      img: '/assets/testimonial-3.png',
       rating: 5
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       name: 'Alex B.',
       role: 'Inspired Creator',
       text: '"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It\'s fulfilling to see my courses making a positive impact on learners globally."',
-      img: '/assets/testimonial-3.png',
+      img: '/assets/testimonial-2.png',
       rating: 5
     }
   ];
